@@ -248,6 +248,7 @@ class Curcio1990Map(VisualFieldMap):
         Assumes that one degree of visual angle is equal to 280 um on the
         retina [Curcio1990]_.
         """
+        print("dva2ret used")
         return 280.0 * xdva, 280.0 * ydva
 
     @staticmethod
@@ -257,6 +258,7 @@ class Curcio1990Map(VisualFieldMap):
         Assumes that one degree of visual angle is equal to 280 um on the
         retina [Curcio1990]_
         """
+        print("ret2dva used")
         return xret / 280.0, yret / 280.0
 
     def __eq__(self, other):
